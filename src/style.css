@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  width: auto;
+  padding: 10px;
+  border-bottom: 1px solid #65e55c;
+  background-color: hsl(161, 34%, 58%);
+  text-align: center;
+  height: 75px;
+}
+h1 {
+  margin: 10px;
+  color: #fff;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.menu {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.content {
+  flex: 4;
+  padding: 20px;
+  background-color: hsl(161, 89%, 79%);
+  height: 100%;
+  margin-top: 0;
+}
+#task_name {
+  font-size: 1.2em;
+  width: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+form button {
+  padding: 10px;
+  background-color: hsl(161, 34%, 58%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 75px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.sort_buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: solid 2px #65e55c;
+}
+#rightPane {
+  text-align: center;
+}
+#rightPane h2 {
+  margin-top: 0;
+  font-size: 2em;
+}
+.entry {
+  height: 75px;
+  background-color: #cefacb;
+  border-bottom: solid 2px #65e55c;
+  padding: 10px;
+}
+.entry button {
+  background-color: hsl(161, 34%, 58%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
