@@ -3,74 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List</title>
+    <title>Weather App</title>
   </head>
   <body>
-    <header id="title"><h1>My ToDo List</h1></header>
-    <div class="main">
-      <div id="leftPane" class="menu">
-        <form id="myForm" action="#" method="post">
-          <h2>Add Task</h2>
-            <label for="task_name">Name:</label>
-            <input type="text" id="task_name" name="task_name" />
-            <label for="task_desc"></label>
-            <textarea rows="5" cols="30" id="task_desc" name="task_desc">Description</textarea>
-            <br />
-            <label for="due_date">Due Date</label>
-            <input type="date" id="due_date" name="due_date" />
-          <h2>Priority</h2>
-            <div>
-              <input type="radio" id="low" name="priority" value="low" />
-              <label for="low">Low</label>
-            </div>
-          <div>
-            <input
-              type="radio"
-              id="standard"
-              name="priority"
-              value="standard"
-            />
-            <label for="standard">Standard</label>
-          </div>
-          <div>
-            <input type="radio" id="high" name="priority" value="high" />
-            <label for="high">High</label>
-          </div>
-          <button type="submit">Add Task</button>
-        </form>
+    <header>
+      <h1>My Weather App</h1>
+      <div class="search">
+        <input type="text" id="search-input" placeholder="Search for a city" />
+        <button class="search-button" type="button" id="search-button">
+          Search
+        </button>
       </div>
-      <div id="rightPane" class="content">
-        <h2>Tasks</h2>
-        <div class="sort_buttons">
-          <div>
-            <input
-              type="radio"
-              id="sort_date_added"
-              name="sort"
-              value="date_added"
-            />
-            <label for="sort_date_added">Sort by Date Added</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="sort_due_date"
-              name="sort"
-              value="due_date"
-            />
-            <label for="sort_due_date">Sort by Due Date</label>
-          </div>
-          <div>
-            <input
-              type="radio"
-              id="sort_priority"
-              name="sort"
-              value="priority"
-            />
-            <label for="sort_priority">Sort by Priority</label>
-          </div>
-        </div>
-      </div>
+    </header>
+
+    <div class="weather-card">
+      <h2>City Name</h2>
+      <p>Temperature: 0</p>
+      <p>Weather: Clear</p>
+      <p>Humidity: 0</p>
+      <p>Wind Speed: 0</p>
     </div>
+
+    <footer id="footer"></footer>
   </body>
 </html>

@@ -1,12 +1,13 @@
 {
-  "name": "todo-list",
+  "name": "weather-app",
   "version": "1.0.0",
   "description": "Odin exercise",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production "
   },
-  "author": "",
+  "author": "mroza",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.2",
@@ -17,5 +18,18 @@
   },
   "dependencies": {
     "date-fns": "^3.6.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdoza/weather-app.git"
+  },
+  "keywords": [
+    "js",
+    "weather",
+    "beginner"
+  ],
+  "bugs": {
+    "url": "https://github.com/mrdoza/weather-app/issues"
+  },
+  "homepage": "https://github.com/mrdoza/weather-app#readme"
 }
