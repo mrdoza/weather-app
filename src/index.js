@@ -1,12 +1,17 @@
-import { weatherKey } from "./keys.js";
+
 import "./style.css";
 import { fetchBackground } from "./background.js";
 import { geoKey } from "./keys.js";
+import { logWeather } from "./getWeather.js";
+import { icon } from "./getWeather.js"; 
+
+
 
 let searchTerms = ["Chicago", "sunny"];
 
 addEventListener("DOMContentLoaded", () => {
   fetchBackground(searchTerms);
+  logWeather("Chicago");
 });
 
 document
@@ -20,6 +25,8 @@ document
       if (isValidCity) {
         searchTerms[0] = searchInput;
         fetchBackground(searchTerms);
+        logWeather(searchInput);
+        searchTerms[1] = icon;
       } else {
         alert("Please enter a valid city");
       }
