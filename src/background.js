@@ -1,5 +1,6 @@
 import { unsplashKey } from "./keys.js";
 
+
 export async function fetchBackground(searchTerms) {
   console.log(searchTerms);
   const query = searchTerms.join(" ");
